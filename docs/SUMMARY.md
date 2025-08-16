@@ -15,22 +15,26 @@ This project implements a comprehensive Go package that duplicates the functiona
 ## Key Features Specified
 
 ### Core Functionality
+
 - Parse CLLI strings into components (place, region, network site, entity code)
 - Support entity CLLIs, non-building locations, and customer locations
 - Strict and relaxed parsing modes with comprehensive validation
 - Pattern matching based on Bell System Practices Section 795-100-100
 
 ### Geographic Resolution
+
 - Convert CLLI region codes to ISO 3166 country/state codes
 - Resolve city names from place codes and region combinations  
 - Support for US and Canadian locations with full name resolution
 
 ### Entity and Location Types
+
 - Resolve entity codes to equipment type descriptions
 - Support switching entities (Tables B-E) and non-switching entities
 - Location type identification for specialized location codes
 
 ### Performance Requirements
+
 - Sub-millisecond parsing for typical CLLIs
 - Thread-safe concurrent access
 - Minimal memory footprint (<200 bytes per instance)

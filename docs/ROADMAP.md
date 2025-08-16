@@ -11,6 +11,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 **Objective**: Establish project structure and implement basic CLLI parsing functionality.
 
 #### Week 1: Project Setup
+
 - [ ] Initialize Go module and directory structure
 - [ ] Set up CI/CD pipeline (GitHub Actions)
 - [ ] Create basic package documentation
@@ -18,6 +19,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 - [ ] Set up testing framework and benchmarking
 
 #### Week 2: Pattern Implementation
+
 - [ ] Implement character class definitions (a, a1, a2, n, x, x1, x2)
 - [ ] Create regex patterns for entity codes (Tables B-E)
 - [ ] Implement place, region, and network site patterns
@@ -25,6 +27,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 - [ ] Add basic validation functions
 
 **Deliverables**:
+
 - Working `Parse()` function with strict validation
 - Complete pattern matching system
 - Basic unit tests with >80% coverage
@@ -35,6 +38,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 **Objective**: Complete parsing functionality with comprehensive validation and error handling.
 
 #### Week 3: Enhanced Parsing
+
 - [ ] Implement `ParseWithOptions()` for flexible parsing
 - [ ] Add relaxed parsing mode for partial CLLIs
 - [ ] Create detailed error types and messages
@@ -42,6 +46,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 - [ ] Add CLLI type detection (entity, non-building, customer)
 
 #### Week 4: Validation System
+
 - [ ] Complete validation for all CLLI components
 - [ ] Implement cross-component validation rules
 - [ ] Add pattern recognition functions (`IsEntityCLLI`, etc.)
@@ -49,6 +54,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 - [ ] Optimize parsing performance
 
 **Deliverables**:
+
 - Complete parsing API with all options
 - Comprehensive validation system
 - Detailed error handling and reporting
@@ -59,6 +65,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 **Objective**: Implement geographic information resolution from CLLI codes.
 
 #### Week 5: Data Infrastructure
+
 - [ ] Design data file format and structure
 - [ ] Implement data loading and caching system
 - [ ] Create region code to ISO 3166 mappings
@@ -66,6 +73,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 - [ ] Implement lazy loading with concurrent safety
 
 #### Week 6: Geographic Functions
+
 - [ ] Implement country code and name resolution
 - [ ] Add state/province code and name resolution
 - [ ] Create city name lookup functionality
@@ -73,6 +81,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 - [ ] Optimize data access performance
 
 **Deliverables**:
+
 - Complete geographic resolution API
 - Embedded data files with region/city mappings
 - Concurrent-safe data loading system
@@ -83,6 +92,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 **Objective**: Implement entity and location type resolution functionality.
 
 #### Week 7: Entity Type System
+
 - [ ] Create entity code to description mappings
 - [ ] Implement pattern-based entity type lookup
 - [ ] Support switching/non-switching categorization
@@ -90,6 +100,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 - [ ] Load entity type data from embedded files
 
 #### Week 8: Location Types
+
 - [ ] Implement location type resolution
 - [ ] Support non-building and customer location types
 - [ ] Create location code description mappings
@@ -97,6 +108,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 - [ ] Integrate with main CLLI API
 
 **Deliverables**:
+
 - Complete entity type resolution system
 - Location type identification functionality
 - Entity/location type data files
@@ -107,6 +119,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 **Objective**: Optimize performance, memory usage, and concurrent access.
 
 #### Week 9: Performance Optimization
+
 - [ ] Profile parsing operations and identify bottlenecks
 - [ ] Optimize regex compilation and caching
 - [ ] Minimize memory allocations during parsing
@@ -114,6 +127,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 - [ ] Optimize data structure access patterns
 
 #### Week 10: Concurrent Safety
+
 - [ ] Ensure thread-safe access to all shared data
 - [ ] Implement proper synchronization primitives
 - [ ] Test concurrent access under load
@@ -121,6 +135,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 - [ ] Add performance monitoring and metrics
 
 **Deliverables**:
+
 - Sub-microsecond parsing performance
 - Thread-safe concurrent access
 - Minimal memory footprint
@@ -131,6 +146,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 **Objective**: Comprehensive testing, documentation, and quality assurance.
 
 #### Week 11: Testing Suite
+
 - [ ] Complete unit test coverage (>95%)
 - [ ] Integration tests with real CLLI datasets
 - [ ] Property-based testing for pattern validation
@@ -138,6 +154,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 - [ ] Regression test suite
 
 #### Week 12: Quality Assurance
+
 - [ ] Code review and refactoring
 - [ ] Documentation review and updates
 - [ ] API stability review
@@ -145,6 +162,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 - [ ] Final performance validation
 
 **Deliverables**:
+
 - Comprehensive test suite with >95% coverage
 - Complete API documentation
 - Performance validation report
@@ -155,6 +173,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 **Objective**: Complete documentation, examples, and migration guides.
 
 #### Week 13: Documentation
+
 - [ ] Complete API reference documentation
 - [ ] Create comprehensive usage examples
 - [ ] Write migration guide from Ruby gem
@@ -162,6 +181,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 - [ ] Create troubleshooting guide
 
 #### Week 14: Examples and Tools
+
 - [ ] Create example applications
 - [ ] Build command-line tool (optional)
 - [ ] Write integration examples
@@ -169,6 +189,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 - [ ] Finalize README and getting started guide
 
 **Deliverables**:
+
 - Complete documentation suite
 - Example applications and code samples
 - Migration guide from Ruby implementation
@@ -179,6 +200,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 **Objective**: Release stable version and establish maintenance process.
 
 #### Release Preparation
+
 - [ ] Final code review and testing
 - [ ] Version tagging and release notes
 - [ ] Package distribution setup
@@ -186,6 +208,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 - [ ] Issue tracking and support setup
 
 #### Post-Release
+
 - [ ] Monitor usage and performance in production
 - [ ] Address community feedback and bug reports
 - [ ] Plan future enhancements and features
@@ -193,6 +216,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 - [ ] Regular dependency updates and security patches
 
 **Deliverables**:
+
 - Stable v1.0.0 release
 - Community contribution process
 - Maintenance and support plan
@@ -201,18 +225,21 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 ## Success Metrics
 
 ### Performance Targets
+
 - [ ] Parse typical CLLI codes in <1 microsecond
 - [ ] Geographic resolution in <10 microseconds
 - [ ] Memory usage <200 bytes per CLLI instance
 - [ ] Support >10,000 concurrent parsing operations/second
 
 ### Quality Targets
+
 - [ ] >95% test coverage across all packages
 - [ ] Zero critical security vulnerabilities
 - [ ] <5% performance regression vs optimized baseline
 - [ ] Full API compatibility with documented interface
 
 ### Community Targets
+
 - [ ] Complete API documentation with examples
 - [ ] Migration guide from Ruby gem
 - [ ] Active community contribution process
@@ -221,12 +248,14 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 ## Risk Mitigation
 
 ### Technical Risks
+
 - **Pattern Complexity**: Start with simpler patterns and gradually increase complexity
 - **Performance Issues**: Regular profiling and benchmarking throughout development
 - **Data Accuracy**: Validate all data files against Ruby gem and official sources
 - **Concurrent Safety**: Implement and test synchronization early in development
 
 ### Project Risks
+
 - **Scope Creep**: Maintain strict focus on Ruby gem feature parity
 - **Timeline Delays**: Build buffer time into each phase
 - **Quality Issues**: Implement continuous testing and code review
@@ -235,6 +264,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 ## Dependencies and Requirements
 
 ### Development Dependencies
+
 - Go 1.19 or later
 - Testing frameworks (standard library + testify)
 - Benchmarking tools (go test -bench)
@@ -242,11 +272,13 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 - Static analysis tools (golangci-lint)
 
 ### Runtime Dependencies
+
 - Standard library only (no external dependencies)
 - Embedded data files using go:embed
 - YAML parsing (gopkg.in/yaml.v3 - optional for data processing)
 
 ### Data Dependencies
+
 - Ruby gem source data files
 - CLLI specification documents
 - ISO 3166 country/state codes
@@ -266,6 +298,7 @@ This roadmap outlines the development phases for implementing a comprehensive Go
 | 8     | Ongoing  | Release and maintenance |
 
 **Total Development Time**: 14 weeks to stable release
+
 **Estimated Effort**: ~280 development hours (20 hours/week)
 
 This roadmap provides a structured approach to implementing the complete CLLI Go package with high quality, performance, and maintainability while ensuring feature parity with the original Ruby gem.
