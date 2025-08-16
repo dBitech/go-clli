@@ -1,0 +1,11 @@
+{
+  // Allow long lines for code and tables
+  "MD013": false,
+  // Permit multiple headings with similar names when necessary
+  "MD024": { "siblings_only": true },
+  // Allow inline HTML occasionally
+  "MD033": false,
+  // Enforce blanks around headings and lists
+  "MD022": true,
+  "MD032": true
+}
