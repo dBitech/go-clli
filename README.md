@@ -3,8 +3,8 @@
 [![Go Version](https://img.shields.io/badge/Go-%3E%3D%201.19-007d9c)](https://golang.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Go Reference](https://pkg.go.dev/badge/github.com/dbitech/go-clli.svg)](https://pkg.go.dev/github.com/dbitech/go-clli)
-[![Go Tests](https://github.com/dbitech/go-clli/actions/workflows/go.yml/badge.svg)](https://github.com/dbitech/go-clli/actions/workflows/go.yml)
-[![Markdown Lint](https://github.com/dbitech/go-clli/actions/workflows/markdown.yml/badge.svg)](https://github.com/dbitech/go-clli/actions/workflows/markdown.yml)
+[![Go Tests](https://github.com/dBitech/go-clli/actions/workflows/go.yml/badge.svg?branch=main)](https://github.com/dBitech/go-clli/actions/workflows/go.yml?query=branch%3Amain)
+[![Markdown Lint](https://github.com/dBitech/go-clli/actions/workflows/markdown.yml/badge.svg?branch=main)](https://github.com/dBitech/go-clli/actions/workflows/markdown.yml?query=branch%3Amain)
 
 A comprehensive Go package for parsing, validating, and extracting information from CLLI (Common Language Location Identifier) codes used in telecommunications.
 
